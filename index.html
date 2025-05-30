@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Portfolio Website</title>
+  </head>
+  <body>
+    <main>
+      <div class="navbar">
+        <h2 class="logo"><a class="logo-text" href="#">AndersenIA</a></h2>
+        <nav class="nav-list">
+          <a href="#About" class="nav-items">About</a>
+          <a href="#Portfolio" class="nav-items">Portfolio</a>
+          <a href="#Contact" class="nav-items">Contact</a>
+        </nav>
+      </div>
+      <header class="section-header">
+        <h1 class="heading">
+          I'm <span class="my-name">Anders.</span> <br />a Frontend developer
+          from Norway.
+        </h1>
+        <div class="profile-img">
+          <img
+            class="img-me"
+            src="https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?q=80&w=1965&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="picture of me"
+          />
+        </div>
+      </header>
+      <section id="About" class="about-section">
+        <div class="about-me">
+          <h2 class="about-header">About me</h2>
+          <p class="about-p">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Perspiciatis porro, ullam, debitis ab repellat aperiam odio quisquam
+            nihil perferendis tenetur saepe iste, quod aliquid. Provident odit
+            eaque itaque quidem quae.
+          </p>
+          <div class="about-icon-div">
+            <span class="about-icons"
+              ><ion-icon name="logo-html5"></ion-icon
+            ></span>
+            <span class="about-icons"
+              ><ion-icon name="logo-css3"></ion-icon
+            ></span>
+            <span class="about-icons"
+              ><ion-icon name="logo-javascript"></ion-icon
+            ></span>
+          </div>
+        </div>
+      </section>
+
+      <section id="Portfolio" class="portfolio-section">
+        <h2 class="portfolio-header">Portfolio</h2>
+        <div class="portfolio-pieces">
+          <div class="portfolio-img">
+            <a
+              href="https://andersenia.github.io/Product-preview-card-component-main/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="images/product-preview_cropped.png"
+                alt=""
+                class="img-portfolio1"
+            /></a>
+          </div>
+          <div class="portfolio-img">
+            <a
+              href="https://omnifood-andersenia.netlify.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="images/Omnifood-cropped.png"
+                alt=""
+                class="img-portfolio2"
+            /></a>
+          </div>
+          <div class="portfolio-img">
+            <a
+              href="https://andersenia.github.io/Blogr-landing-page/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="../Portfolio-Website/images/Blogr-landing-page.png"
+                alt=""
+                class="img-portfolio3"
+            /></a>
+          </div>
+          <div class="portfolio-img">
+            <img src="images/homepage.png" alt="" class="img-portfolio4" />
+          </div>
+        </div>
+      </section>
+      <section id="Contact" class="contact-section">
+        <h2 class="contact-header">Contact me</h2>
+        <div class="contact-form">
+          <form action="/submit_contact_form" method="post">
+            <div class="div-name">
+              <label for="name">Name:</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Your Name"
+                required
+              />
+            </div>
+
+            <div class="div-email">
+              <label for="email">Email:</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Your Email"
+                required
+              />
+            </div>
+
+            <div class="div-subject">
+              <label for="subject">Subject:</label>
+              <input
+                type="text"
+                id="subject"
+                name="subject"
+                placeholder="Subject"
+                required
+              />
+            </div>
+
+            <div class="div-message">
+              <label for="message">Message:</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="4"
+                cols="50"
+                placeholder="Write me a message!"
+                required
+              ></textarea>
+            </div>
+
+            <button class="submit-btn" type="submit">Submit</button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
