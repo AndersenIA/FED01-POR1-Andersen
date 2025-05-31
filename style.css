@@ -90,7 +90,6 @@ html {
 body {
   /* background-color: #34353a; */
   background-color: #111213;
-  padding: 2rem;
 }
 
 /******************************************************************************************/
@@ -102,11 +101,11 @@ body {
 .navbar {
   display: flex;
   padding-top: 1rem;
-  margin-inline: 3rem;
+  padding-inline: 3rem;
   justify-content: space-between;
   position: fixed;
   top: 0;
-  width: 90%;
+  width: 100vw;
   background-color: rgba(17, 18, 19, 0.9);
   z-index: 1000;
 }
@@ -143,9 +142,10 @@ body {
 .section-header {
   display: flex;
   justify-content: center;
+  padding-inline: 3rem;
   /* margin-inline: 3rem; */
-  margin-top: 9rem;
-  padding-bottom: 12rem;
+  align-items: center;
+  height: 100vh;
   border-bottom: 1px solid #e0b364;
 }
 
@@ -200,7 +200,7 @@ body {
 }
 
 .about-icons {
-  margin-right: 2rem;
+  padding-left: 2rem;
   font-size: 4rem;
 }
 .about-icons:last-child {
@@ -214,24 +214,27 @@ body {
 /******************************************************************************************/
 
 .portfolio-section {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   margin-top: 3rem;
   padding-bottom: 3rem;
   border-bottom: 1px solid #e0b364;
-  margin-inline: 2rem;
+  padding-inline: 5rem;
 }
 
 .portfolio-header {
   font-weight: 300;
   text-align: center;
   font-size: 2.5rem;
+  padding-bottom: 3rem;
 }
 
 .portfolio-pieces {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  margin-left: 6rem;
-  margin-right: 6rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .portfolio-img {
