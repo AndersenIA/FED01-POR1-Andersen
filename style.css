@@ -244,18 +244,28 @@ body {
   margin-bottom: 2rem;
   margin-inline: 4rem;
   position: relative;
+  transition: all 300ms ease;
+  filter: grayscale(100);
 }
 
 .info-card {
   position: absolute;
   z-index: 100;
-  background-color: #bbbbbb;
+  background-color: white;
   color: #111213;
   width: 100%;
   bottom: 0;
-  border-radius: 10px 10px 0px 0px;
-  padding-block: 1rem;
+  border-radius: 20px 20px 45px 45px;
+  padding-top: 1rem;
+  padding-bottom: 2.5rem;
   padding-inline: .5rem;
+  opacity: 0;
+  transition: all 300ms ease;
+}
+
+.github-icon {
+  font-size: 1.5rem;
+  padding-top: 1rem;
 }
 
 .img-portfolio1,
@@ -267,10 +277,9 @@ body {
   aspect-ratio: 1;
   box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.5);
   transition: all 300ms ease;
-  filter: grayscale(100);
 }
 
-.img-portfolio1:hover,
+/* .img-portfolio1:hover,
 .img-portfolio2:hover,
 .img-portfolio3:hover,
 .img-portfolio4:hover {
@@ -279,13 +288,16 @@ body {
   cursor: pointer;
   box-shadow: 0px 15px 20px 10px rgb(0, 0, 0);
   filter: grayscale(0);
-}
+} */
 
-.img-portfolio1:hover .info-card {
+.portfolio-img:hover {
   transform: scale(1.05);
   opacity: 0.8;
   cursor: pointer;
+  box-shadow: 0px 15px 20px 10px rgb(0, 0, 0);
+  filter: grayscale(0);
 }
+
 
 /******************************************************************************************/
 /******************************************************************************************/
