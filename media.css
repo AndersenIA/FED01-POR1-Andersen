@@ -41,8 +41,63 @@
   .nav-items {
     font-size: 0.8rem;
   }
+.section-header {
+  flex-direction: column;
+}
 
-  .img-me {
+.nav-items {
+  margin-right: 1rem;
+}
+
+.heading {
+  padding-right: 0;
+  text-align: center;
+}
+.img-me {
+  padding-top: 2rem;
+  max-width: 60%;
+}
+
+.profile-img {
+  display: flex;
+  justify-content: center;
+}
+
+.about-p {
+  padding-inline: 1rem;
+}
+
+.portfolio-section {
+  padding-inline: 1rem;
+}
+
+.info-card {
+  padding-bottom: 1.5rem;
+}
+
+.info-header {
+  font-size: 1.3rem;
+}
+
+.info-p {
+  font-size: .8rem;
+}
+
+textarea {
+  width: 10rem;
+}
+}
+
+@media (max-width: 375px) {
+  .nav-bar {
+    display: none;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .nav-items {
     display: none;
   }
 }
