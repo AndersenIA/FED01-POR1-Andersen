@@ -143,8 +143,8 @@ body {
   display: flex;
   justify-content: center;
   padding-inline: 3rem;
-  /* margin-inline: 3rem; */
-  align-items: center;
+  padding-bottom: 5rem;
+  align-items: flex-end;
   height: 100vh;
   border-bottom: 1px solid #e0b364;
 }
@@ -192,7 +192,6 @@ body {
 }
 
 .about-p {
-  text-align: center;
   color: #bbbbbb;
   font-size: 1.5rem;
   width: 50rem;

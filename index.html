@@ -3,7 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="My portfolio website">
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="media.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -32,7 +34,7 @@
         <div class="profile-img">
           <img
             class="img-me"
-            src="https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?q=80&w=1965&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            src="images/IMG_4373 (1).jpg"
             alt="picture of me"
           />
         </div>
@@ -91,7 +93,7 @@
             >
               <img
                 src="images/hotviewlabs_screenshot.jpg"
-                alt=""
+                alt="HotviewLabs blog school assignment"
                 class="img-portfolio3"
             /></a>
           </div>
@@ -113,7 +115,7 @@
             >
               <img
                 src="images/communityscience_screenshot.jpg"
-                alt=""
+                alt="Community science museum school project"
                 class="img-portfolio1"
             /></a>
           </div>
@@ -134,7 +136,7 @@
             >
               <img
                 src="images/squareeyes_screenshot.jpg"
-                alt=""
+                alt="Square eyes school assignment"
                 class="img-portfolio1"
             /></a>
           </div>
@@ -157,7 +159,7 @@
             >
               <img
                 src="images/movie_api_screenshot.jpg"
-                alt=""
+                alt="Movie website assignment with the schools API"
                 class="img-portfolio1"
               />
             </a>
@@ -182,7 +184,7 @@
             >
               <img
                 src="images/Omnifood-cropped.jpg"
-                alt=""
+                alt="Omnifood project"
                 class="img-portfolio2"
             /></a>
           </div>
@@ -203,7 +205,7 @@
             >
               <img
                 src="images/Blogr-landing-page.jpg"
-                alt=""
+                alt="Landing page from frontendMentor"
                 class="img-portfolio3"
             /></a>
           </div>
@@ -212,54 +214,34 @@
       <section id="Contact" class="contact-section">
         <h2 class="contact-header">Contact me</h2>
         <div class="contact-form">
-          <form action="/submit_contact_form" method="post">
-            <div class="div-name">
-              <label for="name">Name:</label>
-              <input
-                type="text"
-                id="name"
-                name="name"
-                placeholder="Your Name"
-                required
-              />
-            </div>
+          <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+  <input type="hidden" name="form-name" value="contact" />
+  <p style="display:none">
+    <label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
+  </p>
 
-            <div class="div-email">
-              <label for="email">Email:</label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                placeholder="Your Email"
-                required
-              />
-            </div>
+  <div class="div-name">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" placeholder="Your Name" required />
+  </div>
 
-            <div class="div-subject">
-              <label for="subject">Subject:</label>
-              <input
-                type="text"
-                id="subject"
-                name="subject"
-                placeholder="Subject"
-                required
-              />
-            </div>
+  <div class="div-email">
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="Your Email" required />
+  </div>
 
-            <div class="div-message">
-              <label for="message">Message:</label>
-              <textarea
-                id="message"
-                name="message"
-                rows="4"
-                cols="50"
-                placeholder="Write me a message!"
-                required
-              ></textarea>
-            </div>
+  <div class="div-subject">
+    <label for="subject">Subject:</label>
+    <input type="text" id="subject" name="subject" placeholder="Subject" required />
+  </div>
 
-            <button class="submit-btn" type="submit">Submit</button>
-          </form>
+  <div class="div-message">
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" rows="4" cols="50" placeholder="Write me a message!" required></textarea>
+  </div>
+
+  <button class="submit-btn" type="submit">Submit</button>
+</form>
         </div>
       </section>
     </main>

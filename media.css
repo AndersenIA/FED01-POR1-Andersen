@@ -1,0 +1,51 @@
+@media (max-width: 1024px) {
+  .heading {
+    font-size: 2rem;
+  }
+
+  .github-header-icon {
+    font-size: 1.5rem;
+  }
+
+  .img-me {
+    max-width: 20rem;
+  }
+
+  .about-p {
+    font-size: 1rem;
+    width: auto;
+    padding-inline: 5rem;
+  }
+}
+
+@media (max-width: 740px) {
+  .heading {
+    padding-top: 0;
+    font-size: 1.5rem;
+  }
+
+  .github-header-icon {
+    font-size: 1.3rem;
+  }
+
+  .img-me {
+    max-width: 100%;
+  }
+
+  .section-header {
+    align-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .heading {
+  }
+
+  .nav-items {
+    font-size: 0.8rem;
+  }
+
+  .img-me {
+    display: none;
+  }
+}
