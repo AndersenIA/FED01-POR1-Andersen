@@ -38,9 +38,6 @@
 }
 
 @media (max-width: 480px) {
-  .heading {
-  }
-
   .nav-items {
     font-size: 0.8rem;
   }
