@@ -41,8 +41,11 @@
   .nav-items {
     font-size: 0.8rem;
   }
-
-  .img-me {
-    display: none;
-  }
+.section-header {
+  flex-direction: column;
+}
+.img-me {
+  padding-top: 2rem;
+  max-width: 70%;
+}
 }
