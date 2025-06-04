@@ -256,6 +256,7 @@ body {
   position: relative;
   transition: all 300ms ease;
   filter: grayscale(100);
+  border-radius: 45px;
 }
 
 .info-card {
@@ -276,6 +277,7 @@ body {
 .github-link {
   color: #111213;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .github-icon {
@@ -292,6 +294,7 @@ body {
   aspect-ratio: 1;
   box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.5);
   transition: all 300ms ease;
+  cursor: pointer;
 }
 
 /* .img-portfolio1:hover,
@@ -308,7 +311,6 @@ body {
 .portfolio-img:hover {
   transform: scale(1.05);
   opacity: 0.8;
-  cursor: pointer;
   box-shadow: 0px 15px 20px 10px rgb(0, 0, 0);
   filter: grayscale(0);
 }
