@@ -394,3 +394,32 @@ body {
   background-color: #e0b364;
   border: solid 1px #e0b364;
 }
+
+/******************************************************************************************/
+/******************************************************************************************/
+/*THANK YOU*/
+/******************************************************************************************/
+/******************************************************************************************/
+
+.thank-you-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #111213;
+  height: 100vh;
+  justify-content: center;
+}
+
+.thank-you-p {
+  color: #bbbbbb;
+}
+
+.thank-you-link {
+  text-decoration: none;
+  color: #bbbbbb;
+}
+
+.thank-you-link:hover {
+  text-decoration: underline;
+  color: #e0b364;
+}
